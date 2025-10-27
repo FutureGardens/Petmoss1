@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 عرض محدود - 6 شكاير خلطة بيتموس احترافية + هدايا + شحن مجاني</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #f5f5f5;
+            direction: rtl;
+            overflow-x: hidden;
+        }
+
+        /* Announcement Bar */
+        .announcement-bar {
+            background: linear-gradient(90deg, #ff4444, #ff6b6b);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        .announcement-bar .blink {
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a3a0f 0%, #2d5016 50%, #4a7c2b 100%);
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .urgent-badge {
+            display: inline-block;
+            background: #ff4444;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            animation: shake 3s infinite;
+            box-shadow: 0 5px 25px rgba(255,68,68,0.5);
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            line-height: 1.2;
+        }
+
+        .hero h1 .highlight {
+            color: #ffd700;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+        }
+
+        .timer-container {
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .timer-label {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .timer {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .timer-box {
+            background: linear-gradient(135deg, #ff4444, #cc0000);
+            padding: 15px 20px;
+            border-radius: 10px;
+            min-width: 80px;
+            box-shadow: 0 5px 15px rgba(255,68,68,0.4);
+        }
+
+        .timer-box .number {
+            font-size: 36px;
+            font-weight: 900;
+            display: block;
+            line-height: 1;
+        }
+
+        .timer-box .label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .hero-price-container {
+            margin: 30px 0;
+        }
+
+        .old-price {
+            font-size: 32px;
+            text-decoration: line-through;
+            opacity: 0.7;
+            color: #ffcccc;
+        }
+
+        .hero-price {
+            font-size: 72px;
+            font-weight: 900;
+            color: #ffd700;
+            margin: 10px 0;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-price::after {
+            content: '🔥';
+            position: absolute;
+            top: -20px;
+            right: -40px;
+            font-size: 40px;
+            animation: fire 1s infinite;
+        }
+
+        @keyframes fire {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .hero-price span {
+            font-size: 36px;
+        }
+
+        .discount-badge {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 30px;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 5px 20px rgba(76,175,80,0.4); }
+            50% { transform: scale(1.05); box-shadow: 0 8px 30px rgba(76,175,80,0.6); }
+        }
+
+        .hero-cta {
+            margin-top: 30px;
+        }
+
+        .hero-cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 25px 60px;
+            font-size: 28px;
+            font-weight: 900;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(76,175,80,0.4);
+            transition: all 0.3s ease;
+            border: 3px solid rgba(255,255,255,0.3);
+            animation: glow 2s infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 10px 30px rgba(76,175,80,0.4), 0 0 20px rgba(76,175,80,0.2); }
+            50% { box-shadow: 0 15px 40px rgba(76,175,80,0.6), 0 0 40px rgba(76,175,80,0.4); }
+        }
+
+        .hero-cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(76,175,80,0.6);
+        }
+
+        .stock-warning {
+            margin-top: 20px;
+            color: #ffcccc;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            background: white;
+            padding: 30px 20px;
+            margin: -30px 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .badge-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge-icon {
+            font-size: 40px;
+        }
+
+        .badge-text {
+            font-weight: 700;
+            color: #2d5016;
+            font-size: 16px;
+        }
+
+        /* Video Section */
+        .video-section {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .video-section h2 {
+            text-align: center;
+            font-size: 42px;
+            color: #2d5016;
+            margin-bottom: 15px;
+        }
+
+        .video-section .subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 5px solid #4a7c2b;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2b 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Product Details */
+        .product-details {
+            background: linear-gradient(135deg, #4a7c2b 0%, #2d5016 100%);
+            color: white;
+            padding: 80px 20px;
+            margin: 40px 0;
+        }
+
+        .product-details h2 {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .product-details .subtitle {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 50px;
+            opacity: 0.9;
+        }
+
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .ingredient-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .ingredient-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.25);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .ingredient-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .ingredient-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .ingredient-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .size-highlight {
+            text-align: center;
+            background: rgba(255,215,0,0.2);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            border: 3px dashed #ffd700;
+        }
+
+        .size-highlight h3 {
+            font-size: 36px;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .size-highlight p {
+            font-size: 22px;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .benefits h2 {
+            text-align: center;
+            font-size: 48px;
+            color: #2d5016;
+            margin-bottom: 60px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border-color: #4a7c2b;
+        }
+
+        .benefit-icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+        }
+
+        .benefit-card h3 {
+            font-size: 26px;
+            color: #2d5016;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .benefit-card p {
+            color: #555;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        /* Offer Package */
+        .offer-package {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff4444 100%);
+            color: white;
+            padding: 80px 20px;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-package::before {
+            content: '🎁';
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .offer-package-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .offer-package h2 {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .offer-list {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+
+        .offer-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            font-size: 22px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .offer-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateX(-10px);
+        }
+
+        .check-icon {
+            width: 45px;
+            height: 45px;
+            background: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+            font-size: 26px;
+            flex-shrink: 0;
+            box-shadow: 0 5px 15px rgba(76,175,80,0.4);
+        }
+
+        .gift-badge {
+            background: #ffd700;
+            color: #2d5016;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-right: 10px;
+            font-weight: 900;
+        }
+
+        /* Social Proof */
+        .social-proof {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+
+        .social-proof h2 {
+            text-align: center;
+            font-size: 48px;
+            color: #2d5016;
+            margin-bottom: 60px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '⭐⭐⭐⭐⭐';
+            display: block;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: #2d5016;
+            font-size: 18px;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 900;
+            color: #4a7c2b;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Price Comparison */
+        .price-comparison {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .price-comparison h2 {
+            text-align: center;
+            font-size: 48px;
+            color: #2d5016;
+            margin-bottom: 60px;
+        }
+
+        .comparison-table {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-header {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2b 100%);
+            color: white;
+        }
+
+        .comparison-cell {
+            padding: 25px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .comparison-header .comparison-cell {
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        .highlight-col {
+            background: #fff9e6;
+            font-weight: 700;
+            color: #2d5016;
+        }
+
+        .comparison-total {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff4444 100%);
+            color: white;
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        /* Guarantee Section */
+        .guarantee {
+            background: linear-gradient(135deg, #4a7c2b 0%, #2d5016 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .guarantee-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .guarantee-badge {
+            width: 150px;
+            height: 150px;
+            background: #ffd700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 60px;
+            box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+            border: 5px solid white;
+        }
+
+        .guarantee h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .guarantee p {
+            font-size: 22px;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        /* Checkout Section */
+        .checkout-section {
+            background: white;
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .checkout-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #4CAF50, #ffd700, #4CAF50);
+            background-size: 200% 100%;
+            animation: gradientMove 3s linear infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 200% 0%; }
+        }
+
+        .checkout-section h2 {
+            text-align: center;
+            font-size: 48px;
+            color: #2d5016;
+            margin-bottom: 20px;
+        }
+
+        .checkout-subtitle {
+            text-align: center;
+            font-size: 22px;
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+        .checkout-form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            color: #2d5016;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .required {
+            color: #ff4444;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 17px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #4a7c2b;
+            box-shadow: 0 0 0 4px rgba(74,124,43,0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .order-summary {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 35px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 3px solid #4a7c2b;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .order-summary h3 {
+            color: #2d5016;
+            margin-bottom: 25px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #d0d0d0;
+            font-size: 18px;
+        }
+
+        .summary-item:last-child {
+            border-bottom: none;
+            font-size: 32px;
+            font-weight: 900;
+            color: #2d5016;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 3px solid #2d5016;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            border: none;
+            padding: 25px;
+            font-size: 28px;
+            font-weight: 900;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Cairo', sans-serif;
+            box-shadow: 0 10px 30px rgba(76,175,80,0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(76,175,80,0.5);
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .success-message {
+            display: none;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 20px;
+            box-shadow: 0 10px 30px rgba(76,175,80,0.3);
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .error-message {
+            display: none;
+            background: linear-gradient(135deg, #ff4444, #cc0000);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 20px;
+            box-shadow: 0 10px 30px rgba(255,68,68,0.3);
+        }
+
+        .security-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .security-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .security-badge .icon {
+            font-size: 24px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a3a0f 0%, #2d5016 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        footer .logo-footer {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Sticky Order Button */
+        .sticky-order {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            padding: 15px 20px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+            z-index: 999;
+            animation: slideUp 0.5s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        .sticky-order.show {
+            display: flex;
+        }
+
+        .sticky-order-btn {
+            background: white;
+            color: #2d5016;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 900;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .sticky-order-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-price {
+                font-size: 56px;
+            }
+
+            .timer-box {
+                min-width: 70px;
+                padding: 12px 15px;
+            }
+
+            .timer-box .number {
+                font-size: 28px;
+            }
+
+            .benefits h2,
+            .offer-package h2,
+            .social-proof h2,
+            .price-comparison h2,
+            .checkout-section h2 {
+                font-size: 32px;
+            }
+
+            .offer-item {
+                font-size: 17px;
+            }
+
+            .comparison-row {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-cell {
+                border-bottom: 1px solid #e0e0e0;
+            }
+
+            .stat-number {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span class="blink">⚡</span> عرض لفترة محدودة جداً - الكمية محدودة - اطلب الآن قبل نفاذ الكمية! <span class="blink">⚡</span>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <div class="logo">🌱 Future Gardens</div>
+            <div class="urgent-badge">🔥 عرض اليوم فقط 🔥</div>
+            <h1>خلطة بيتموس احترافية<br><span class="highlight">6 شكاير</span> بسعر <span class="highlight">5 شكاير!</span></h1>
+            
+            <div class="timer-container">
+                <div class="timer-label">⏰ العرض ينتهي خلال:</div>
+                <div class="timer">
+                    <div class="timer-box">
+                        <span class="number" id="hours">23</span>
+                        <span class="label">ساعة</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="number" id="minutes">59</span>
+                        <span class="label">دقيقة</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="number" id="seconds">59</span>
+                        <span class="label">ثانية</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-price-container">
+                <div class="old-price">السعر العادي: 700 جنيه</div>
+                <div class="hero-price">500 <span>جنيه</span></div>
+                <div class="discount-badge">وفّر 200 جنيه 🎉</div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#order-now" class="hero-cta-btn">🛒 اطلب الآن - توصيل لكل مصر</a>
+            </div>
+
+            <div class="stock-warning">⚠️ متبقي 17 طقم فقط من هذا العرض</div>
+        </div>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="container">
+        <div class="trust-badges">
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <div class="badge-icon">✅</div>
+                    <div class="badge-text">منتج أصلي 100%</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">🚚</div>
+                    <div class="badge-text">شحن لجميع المحافظات</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">💯</div>
+                    <div class="badge-text">ضمان الجودة</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">💳</div>
+                    <div class="badge-text">الدفع عند الاستلام</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="container">
+        <div class="video-section">
+            <h2>🎥 شاهد جودة المنتج</h2>
+            <p class="subtitle">شاهد كيف تحول نباتاتك بهذه الخلطة الاحترافية</p>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div>
+                        <p style="margin-bottom: 10px;">📹 ضع رابط فيديو اليوتيوب هنا</p>
+                        <p style="font-size: 16px; opacity: 0.8;">استبدل هذا القسم بكود iframe للفيديو</p>
+                    </div>
+                </div>
+                <!-- لإضافة الفيديو، استبدل القسم أعلاه بـ:
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-details">
+        <div class="container">
+            <h2>🌿 مكونات الشيكارة</h2>
+            <p class="subtitle">خلطة احترافية متوازنة - كل شيكارة 16 لتر</p>
+            
+            <div class="ingredients-grid">
+                <div class="ingredient-card">
+                    <div class="ingredient-icon">🏔️</div>
+                    <h3>بيتموس صافي</h3>
+                    <p>بيتموس نقي عالي الجودة للاحتفاظ بالرطوبة وتهوية التربة</p>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-icon">🍃</div>
+                    <h3>كمبوست نباتي</h3>
+                    <p>سماد عضوي طبيعي غني بالعناصر الغذائية</p>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-icon">🧊</div>
+                    <h3>فوم زراعي</h3>
+                    <p>لتهوية مثالية ونمو صحي للجذور</p>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-icon">✨</div>
+                    <h3>فيرموكلايت</h3>
+                    <p>معدن طبيعي لتحسين امتصاص الماء والمغذيات</p>
+                </div>
+            </div>
+
+            <div class="size-highlight">
+                <h3>📦 حجم الشيكارة</h3>
+                <p>كل شيكارة = 16 لتر من الخلطة الجاهزة</p>
+                <p style="margin-top: 10px; font-size: 18px;">6 شكاير = 96 لتر كافية لعشرات الأصص!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="benefits">
+        <div class="container">
+            <h2>⭐ لماذا تختار خلطتنا؟</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💧</div>
+                    <h3>احتفاظ ممتاز بالماء</h3>
+                    <p>البيتموس يحتفظ بالماء لفترات أطول، تقليل مرات الري وتوفير الوقت</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌱</div>
+                    <h3>تهوية مثالية للجذور</h3>
+                    <p>الفوم والفيرموكلايت يضمنان تهوية ممتازة ونمو جذور قوية</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>خالية من الآفات</h3>
+                    <p>معقمة وخالية تماماً من الأمراض والحشرات والبذور الضارة</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚖️</div>
+                    <h3>خفيفة الوزن</h3>
+                    <p>سهلة الحمل والنقل والاستخدام، مناسبة للبلكونات والأسطح</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌾</div>
+                    <h3>غنية بالمغذيات</h3>
+                    <p>الكمبوست النباتي يوفر تغذية طبيعية متكاملة لنباتاتك</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">♻️</div>
+                    <h3>صديقة للبيئة</h3>
+                    <p>100% مكونات طبيعية، آمنة للنباتات والبيئة والأطفال</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer Package -->
+    <div class="offer-package">
+        <div class="offer-package-content">
+            <h2>🎁 العرض الكامل يشمل</h2>
+            <div class="offer-list">
+                <div class="offer-item">
+                    <span class="check-icon">✓</span>
+                    <span><strong>5 شكاير</strong> خلطة بيتموس احترافية (16 لتر للشيكارة)</span>
+                </div>
+                <div class="offer-item">
+                    <span class="check-icon">✓</span>
+                    <span><span class="gift-badge">هدية</span> شيكارة <strong>سادسة مجاناً!</strong></span>
+                </div>
+                <div class="offer-item">
+                    <span class="check-icon">✓</span>
+                    <span><span class="gift-badge">هدية</span> <strong>ربع كيلو محسن زراعي</strong> مجاناً (قيمته 80 جنيه)</span>
+                </div>
+                <div class="offer-item">
+                    <span class="check-icon">✓</span>
+                    <span><span class="gift-badge">هدية</span> <strong>شحن مجاني</strong> للقاهرة والجيزة</span>
+                </div>
+                <div class="offer-item">
+                    <span class="check-icon">✓</span>
+                    <span>توصيل لأي مكان في <strong>جميع محافظات مصر</strong></span>
+                </div>
+                <div class="offer-item">
+                    <span class="check-icon">✓</span>
+                    <span><strong>ضمان الجودة</strong> واسترجاع المنتج في حالة عدم المطابقة</span>
+                </div>
+                <div class="offer-item">
+                    <span class="check-icon">✓</span>
+                    <span><strong>الدفع عند الاستلام</strong> - راحة بالك أولويتنا</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Proof -->
+    <div class="social-proof">
+        <div class="container">
+            <h2>💬 ماذا يقول عملاؤنا</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"والله منتج ممتاز! النباتات بتاعتي اتحولت 180 درجة. الخلطة خفيفة ومتهوية والنبات بقى صحي جداً. شكراً Future Gardens!"</p>
+                    <p class="testimonial-author">- أحمد محمود، القاهرة</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"أول مرة أجرب بيتموس بالتركيبة دي وفعلاً فرق كبير. النباتات بتنمو أسرع والجذور قوية جداً. العرض كمان ممتاز جداً!"</p>
+                    <p class="testimonial-author">- مريم عبدالله، الجيزة</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"التوصيل كان سريع والمنتج نظيف ومعبأ كويس. الشيكارة السادسة هدية حاجة جميلة فعلاً. هطلب تاني أكيد!"</p>
+                    <p class="testimonial-author">- محمد صلاح، الإسكندرية</p>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-number">2,500+</span>
+                    <span class="stat-label">عميل راضي</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9/5</span>
+                    <span class="stat-label">تقييم العملاء</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">نسبة الرضا</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Price Comparison -->
+    <div class="price-comparison">
+        <div class="container">
+            <h2>💰 قارن واوفر!</h2>
+            <div class="comparison-table">
+                <div class="comparison-row comparison-header">
+                    <div class="comparison-cell">المنتج</div>
+                    <div class="comparison-cell">السوق</div>
+                    <div class="comparison-cell">عرضنا</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">6 شكاير بيتموس (16 لتر)</div>
+                    <div class="comparison-cell">600 ج.م</div>
+                    <div class="comparison-cell highlight-col">500 ج.م</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">محسن زراعي (ربع كيلو)</div>
+                    <div class="comparison-cell">80 ج.م</div>
+                    <div class="comparison-cell highlight-col" style="color: #4CAF50;">مجاناً! 🎁</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">الشحن للقاهرة والجيزة</div>
+                    <div class="comparison-cell">50 ج.م</div>
+                    <div class="comparison-cell highlight-col" style="color: #4CAF50;">مجاناً! 🎁</div>
+                </div>
+                <div class="comparison-row comparison-total">
+                    <div class="comparison-cell">الإجمالي</div>
+                    <div class="comparison-cell">730 ج.م</div>
+                    <div class="comparison-cell" style="background: #ffd700; color: #2d5016;">500 ج.م فقط!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guarantee Section -->
+    <div class="guarantee">
+        <div class="container">
+            <div class="guarantee-content">
+                <div class="guarantee-badge">✓</div>
+                <h2>ضمان استرجاع المال 100%</h2>
+                <p>نحن واثقون من جودة منتجنا! إذا لم تكن راضياً تماماً عن المنتج، سنسترجع لك أموالك بالكامل خلال 7 أيام من الاستلام - بدون أي أسئلة!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <div class="checkout-section" id="order-now">
+        <div class="container">
+            <h2>🛒 اطلب الآن</h2>
+            <p class="checkout-subtitle">املأ البيانات وسنتواصل معك خلال 24 ساعة</p>
+            
+            <div class="success-message" id="successMessage">
+                <div style="font-size: 60px; margin-bottom: 15px;">✅</div>
+                <strong>تم استلام طلبك بنجاح!</strong><br>
+                سيتواصل معك فريقنا خلال 24 ساعة لتأكيد الطلب.<br>
+                شكراً لثقتك في Future Gardens! 🌱
+            </div>
+            
+            <div class="error-message" id="errorMessage">
+                <div style="font-size: 60px; margin-bottom: 15px;">❌</div>
+                <strong>حدث خطأ في إرسال الطلب</strong><br>
+                برجاء المحاولة مرة أخرى أو التواصل معنا مباشرة
+            </div>
+
+            <form class="checkout-form" id="checkoutForm">
+                <div class="order-summary">
+                    <h3>📦 ملخص طلبك</h3>
+                    <div class="summary-item">
+                        <span><strong>6 شكاير خلطة بيتموس</strong> (16 لتر × 6)</span>
+                        <span>500 ج.م</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>🎁 محسن زراعي (ربع كيلو)</span>
+                        <span style="color: #4CAF50; font-weight: 700;">مجاناً</span>
+                    </div>
+                    <div class="summary-item">
+                        <span id="shippingLabel">🚚 الشحن</span>
+                        <span id="shippingCost" style="color: #4CAF50; font-weight: 700;">مجاني</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>💰 الإجمالي</span>
+                        <span id="totalPrice">500 ج.م</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">الاسم بالكامل <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="مثال: أحمد محمد علي">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required placeholder="01xxxxxxxxx" maxlength="11">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone2">رقم هاتف بديل (اختياري)</label>
+                    <input type="tel" id="phone2" name="phone2" placeholder="01xxxxxxxxx" maxlength="11">
+                </div>
+
+                <div class="form-group">
+                    <label for="governorate">المحافظة <span class="required">*</span></label>
+                    <select id="governorate" name="governorate" required>
+                        <option value="">اختر المحافظة</option>
+                        <option value="القاهرة">القاهرة (شحن مجاني)</option>
+                        <option value="الجيزة">الجيزة (شحن مجاني)</option>
+                        <option value="الإسكندرية">الإسكندرية</option>
+                        <option value="الدقهلية">الدقهلية</option>
+                        <option value="الشرقية">الشرقية</option>
+                        <option value="القليوبية">القليوبية</option>
+                        <option value="المنوفية">المنوفية</option>
+                        <option value="الغربية">الغربية</option>
+                        <option value="البحيرة">البحيرة</option>
+                        <option value="كفر الشيخ">كفر الشيخ</option>
+                        <option value="دمياط">دمياط</option>
+                        <option value="بورسعيد">بورسعيد</option>
+                        <option value="الإسماعيلية">الإسماعيلية</option>
+                        <option value="السويس">السويس</option>
+                        <option value="الفيوم">الفيوم</option>
+                        <option value="بني سويف">بني سويف</option>
+                        <option value="المنيا">المنيا</option>
+                        <option value="أسيوط">أسيوط</option>
+                        <option value="سوهاج">سوهاج</option>
+                        <option value="قنا">قنا</option>
+                        <option value="الأقصر">الأقصر</option>
+                        <option value="أسوان">أسوان</option>
+                        <option value="البحر الأحمر">البحر الأحمر</option>
+                        <option value="الوادي الجديد">الوادي الجديد</option>
+                        <option value="مطروح">مطروح</option>
+                        <option value="شمال سيناء">شمال سيناء</option>
+                        <option value="جنوب سيناء">جنوب سيناء</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">المدينة / المنطقة <span class="required">*</span></label>
+                    <input type="text" id="city" name="city" required placeholder="مثال: مدينة نصر، المعادي، المنصورة...">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">العنوان بالتفصيل <span class="required">*</span></label>
+                    <textarea id="address" name="address" required placeholder="الشارع، رقم العمارة، الدور، رقم الشقة، أقرب علامة مميزة...&#10;مثال: شارع الجامعة، عمارة 15، الدور الثالث، شقة 7، بجوار مسجد النور"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">ملاحظات إضافية (اختياري)</label>
+                    <textarea id="notes" name="notes" placeholder="أي تعليمات خاصة للتوصيل أو أسئلة عن المنتج..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    🛒 تأكيد الطلب - 500 جنيه
+                </button>
+
+                <div class="security-badges">
+                    <div class="security-badge">
+                        <span class="icon">🔒</span>
+                        <span>بياناتك آمنة 100%</span>
+                    </div>
+                    <div class="security-badge">
+                        <span class="icon">💳</span>
+                        <span>الدفع عند الاستلام</span>
+                    </div>
+                    <div class="security-badge">
+                        <span class="icon">📞</span>
+                        <span>دعم فني 24/7</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo-footer">🌱 Future Gardens</div>
+            <p>نساعدك في زراعة أحلامك الخضراء</p>
+            <p style="margin-top: 20px;">
+                📞 للاستفسار: <a href="tel:+201000000000">01000000000</a>
+            </p>
+            <p>
+                📧 البريد الإلكتروني: <a href="mailto:info@futuregardens1.com">info@futuregardens1.com</a>
+            </p>
+            <p style="margin-top: 15px;">
+                🌐 <a href="https://futuregardens1.com" target="_blank">futuregardens1.com</a>
+            </p>
+            <p style="margin-top: 30px; opacity: 0.8; font-size: 16px;">
+                جميع الحقوق محفوظة © 2024 Future Gardens
+            </p>
+        </div>
+    </footer>
+
+    <!-- Sticky Order Button -->
+    <div class="sticky-order" id="stickyOrder">
+        <a href="#order-now" class="sticky-order-btn">🛒 اطلب الآن - 500 جنيه</a>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function startCountdown() {
+            const endTime = new Date().getTime() + (24 * 60 * 60 * 1000); // 24 hours from now
+            
+            const timer = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+                
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById('hours').textContent = '00';
+                    document.getElementById('minutes').textContent = '00';
+                    document.getElementById('seconds').textContent = '00';
+                }
+            }, 1000);
+        }
+        
+        startCountdown();
+
+        // Sticky Order Button
+        window.addEventListener('scroll', function() {
+            const stickyOrder = document.getElementById('stickyOrder');
+            const checkoutSection = document.getElementById('order-now');
+            const checkoutTop = checkoutSection.offsetTop;
+            const scrollPosition = window.pageYOffset + window.innerHeight;
+            
+            if (window.pageYOffset > 500 && scrollPosition < checkoutTop + 200) {
+                stickyOrder.classList.add('show');
+            } else {
+                stickyOrder.classList.remove('show');
+            }
+        });
+
+        // Handle Form Submission
+        document.getElementById('checkoutForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Hide messages
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+            
+            // Disable button
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ جاري إرسال الطلب...';
+            
+            // Collect form data
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                phone: document.getElementById('phone').value,
+                phone2: document.getElementById('phone2').value || '',
+                governorate: document.getElementById('governorate').value,
+                city: document.getElementById('city').value,
+                address: document.getElementById('address').value,
+                notes: document.getElementById('notes').value || '',
+                product: 'عرض البيتموس - 6 شكاير (16 لتر) + محسن زراعي',
+                price: document.getElementById('totalPrice').textContent,
+                shipping: document.getElementById('shippingCost').textContent,
+                timestamp: new Date().toLocaleString('ar-EG')
+            };
+
+            try {
+                // Log order data
+                console.log('Order Data:', formData);
+                
+                // يمكنك هنا إرسال البيانات إلى WooCommerce API أو أي endpoint
+                // مثال:
+                /*
+                const response = await fetch('https://futuregardens1.com/wp-json/wc/v3/orders', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Basic ' + btoa('consumer_key:consumer_secret')
+                    },
+                    body: JSON.stringify({
+                        payment_method: 'cod',
+                        payment_method_title: 'الدفع عند الاستلام',
+                        set_paid: false,
+                        billing: {
+                            first_name: formData.fullName.split(' ')[0],
+                            last_name: formData.fullName.split(' ').slice(1).join(' '),
+                            address_1: formData.address,
+                            city: formData.city,
+                            state: formData.governorate,
+                            phone: formData.phone,
+                        },
+                        shipping: {
+                            first_name: formData.fullName.split(' ')[0],
+                            last_name: formData.fullName.split(' ').slice(1).join(' '),
+                            address_1: formData.address,
+                            city: formData.city,
+                            state: formData.governorate,
+                        },
+                        line_items: [{
+                            product_id: YOUR_PRODUCT_ID, // ضع ID المنتج هنا
+                            quantity: 1
+                        }],
+                        customer_note: formData.notes
+                    })
+                });
+
+                if (!response.ok) throw new Error('Network response was not ok');
+                const data = await response.json();
+                */
+                
+                // Simulate API call
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                
+                // Clear form
+                this.reset();
+                
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Reset shipping cost
+                document.getElementById('shippingCost').textContent = 'مجاني';
+                document.getElementById('shippingCost').style.color = '#4CAF50';
+                document.getElementById('totalPrice').textContent = '500 ج.م';
+                
+            } catch (error) {
+                console.error('Error:', error);
+                errorMessage.style.display = 'block';
+                errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } finally {
+                // Enable button
+                submitBtn.disabled = false;
+                submitBtn.textContent = '🛒 تأكيد الطلب - ' + document.getElementById('totalPrice').textContent;
+            }
+        });
+
+        // Update shipping cost based on governorate
+        document.getElementById('governorate').addEventListener('change', function() {
+            const shippingCost = document.getElementById('shippingCost');
+            const totalPrice = document.getElementById('totalPrice');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            if (this.value === 'القاهرة' || this.value === 'الجيزة') {
+                shippingCost.textContent = 'مجاني';
+                shippingCost.style.color = '#4CAF50';
+                shippingCost.style.fontWeight = '700';
+                totalPrice.textContent = '500 ج.م';
+                submitBtn.textContent = '🛒 تأكيد الطلب - 500 جنيه';
+            } else if (this.value !== '') {
+                shippingCost.textContent = '50 ج.م';
+                shippingCost.style.color = '#ff4444';
+                shippingCost.style.fontWeight = '700';
+                totalPrice.textContent = '550 ج.م';
+                submitBtn.textContent = '🛒 تأكيد الطلب - 550 جنيه';
+            }
+        });
+
+        // Phone number formatting and validation
+        function formatPhone(input) {
+            input.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 11) value = value.slice(0, 11);
+                e.target.value = value;
+            });
+        }
+
+        formatPhone(document.getElementById('phone'));
+        formatPhone(document.getElementById('phone2'));
+
+        // Smooth scroll for CTA buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form validation enhancement
+        document.getElementById('checkoutForm').addEventListener('input', function(e) {
+            const input = e.target;
+            if (input.validity.valid) {
+                input.style.borderColor = '#4CAF50';
+            } else if (input.value !== '') {
+                input.style.borderColor = '#ff4444';
+            } else {
+                input.style.borderColor = '#e0e0e0';
+            }
+        });
+    </script>
+</body>
+</html>
